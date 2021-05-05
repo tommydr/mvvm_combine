@@ -11,6 +11,8 @@
 		5D5758302641B72D00F234AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57582F2641B72D00F234AD /* ContentView.swift */; };
 		5D5758322641B72E00F234AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5758312641B72E00F234AD /* Assets.xcassets */; };
 		5D5758352641B72E00F234AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5758342641B72E00F234AD /* Preview Assets.xcassets */; };
+		5D57583E26429CDE00F234AD /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57583D26429CDE00F234AD /* ContentViewModel.swift */; };
+		5D5758412642A08600F234AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5758402642A08600F234AD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		5D5758312641B72E00F234AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5758342641B72E00F234AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D5758362641B72E00F234AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D57583D26429CDE00F234AD /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5D5758402642A08600F234AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		5D57582C2641B72D00F234AD /* mvvm_combine */ = {
 			isa = PBXGroup;
 			children = (
+				5D57583F2642A07600F234AD /* Models */,
+				5D57583C26429CAE00F234AD /* ViewModel */,
 				5D57582D2641B72D00F234AD /* mvvm_combineApp.swift */,
 				5D57582F2641B72D00F234AD /* ContentView.swift */,
 				5D5758312641B72E00F234AD /* Assets.xcassets */,
@@ -67,6 +73,22 @@
 				5D5758342641B72E00F234AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D57583C26429CAE00F234AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D57583D26429CDE00F234AD /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D57583F2642A07600F234AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D5758402642A08600F234AD /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5758412642A08600F234AD /* User.swift in Sources */,
 				5D5758302641B72D00F234AD /* ContentView.swift in Sources */,
 				5D57582E2641B72D00F234AD /* mvvm_combineApp.swift in Sources */,
+				5D57583E26429CDE00F234AD /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

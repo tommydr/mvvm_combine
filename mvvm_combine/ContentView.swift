@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	@StateObject var viewModel = ContentViewModel()
+	
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		VStack{
+			Text(viewModel.time)
+				.padding()
+			List(viewModel.users){ user in
+				Text(user.name)
+			}
+		}
+		
     }
 }
 
